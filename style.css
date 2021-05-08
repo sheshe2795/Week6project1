@@ -1,0 +1,107 @@
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --verylightgray: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--verylightgray);
+}
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--verylightgray);
+    font-size: 40px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+   margin-left: 15em;
+    margin-top: 6em;
+    height: 400px;
+    
+}
+.sedans {
+    background-color: var(--orange);
+    padding: 40px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
+.sedbtn{
+    color: var(--orange);
+}
+.suvs {
+    background-color: var(--darkcyan);
+    padding: 40px;
+}
+.suvbtn {
+    color: var(--darkcyan);
+}
+.lux {
+    background-color: var(--verydarkcyan);
+    padding: 40px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.luxbtn {
+    color: var(--verydarkcyan);
+}
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 25px;
+    padding: 10px;
+    width: 125px;
+    border-color: transparent;
+    margin-top: 60px;
+    background-color: var(--verylightgray);
+}
+@media (max-width: 375px){
+    .container {
+        display: grid;
+        grid-template-columns: minmax(20px, 325px);
+        margin-left: 0px;
+        padding-left: 1em;
+        padding-right: 0em;
+        padding-top: 10px;
+        padding-bottom: 10em;
+        margin-bottom: 45em;    
+        
+}
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 25px;
+    padding: 10px;
+    width: 125px;
+    border-color: transparent;
+    margin-top: 6px;
+}
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--verylightgray);
+    font-size: 40px;
+}
+.lux {
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 0;
+    padding-right: 50px;
+}
+.sedans {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 0;
+    padding-right: 50px;
+}
+}
